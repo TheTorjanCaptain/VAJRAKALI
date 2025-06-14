@@ -48,6 +48,7 @@ sudo ./VAJRAKALI.sh
 ❌ Smart GitHub tool detection & update check (Planned)  
 ❌ Auto-detection of missing dependencies (Planned)  
 ❌ Package conflict resolution warning (Planned)
+❌ Game-up VAJRAKALI (Planned)
 
 ---
 

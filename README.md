@@ -1,6 +1,7 @@
 # VajraKali - The Indestructible Pentest Forge
 
 ![VajraKali Banner](https://img.shields.io/badge/VajraKali-v1.0.0-blue.svg)
+![Main Menu Screenshot](misc/VAJRAKALI.png)
 
 ## ⚡ About VajraKali
 
@@ -47,10 +48,6 @@ Realtek Fixers – rtl88xxau, rtl8812au drivers
 ❌ Smart GitHub tool detection & update check (Planned)
 ❌ Auto-detection of missing dependencies (Planned)
 ❌ Package conflict resolution warning (Planned)
-
-
-🖥️ Screenshots
-![VAJRAKALI](https://github.com/user-attachments/assets/98024274-8413-4ed7-ac5d-051babb56dd2)
 
 
 ⚠️ Disclaimer

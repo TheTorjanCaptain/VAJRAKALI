@@ -31,14 +31,14 @@ sudo ./VAJRAKALI.sh
 ---
 
 ## ⚙️ Available Tool Modules
-Core Tools – nmap, sqlmap, responder, impacket, crackmapexec, evil-winrm, etc.
-Wireless Tools – aircrack-ng, reaver, pixiewps, bully
-VM/UTM Tools – spice-vdagent, qemu-guest-agent
-Terminal Tools – neofetch, htop, tmux, zsh
-GitHub Tools – linpeas, winpeas, wpscan, gowitness
-Developer Essentials – git, curl, wget, vim, golang
-Stealth Tools – tor, proxychains, macchanger
-Realtek Fixers – rtl88xxau, rtl8812au drivers
+- **Core Tools** – nmap, sqlmap, responder, impacket, crackmapexec, evil-winrm, etc.
+- **Wireless Tools** – aircrack-ng, reaver, pixiewps, bully
+- **VM/UTM Tools** – spice-vdagent, qemu-guest-agent
+- **Terminal Tools** – neofetch, htop, tmux, zsh
+- **GitHub Tools** – linpeas, winpeas, wpscan, gowitness
+- **Developer Essentials** – git, curl, wget, vim, golang
+- **Stealth Tools** – tor, proxychains, macchanger
+- **Realtek Fixers** – rtl88xxau, rtl8812au drivers
 
 ---
 

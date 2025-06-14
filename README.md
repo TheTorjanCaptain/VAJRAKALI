@@ -21,10 +21,10 @@
 ## 📋 Usage
 
 ```bash
-git clone https://github.com/TheTorjanCaptain/VajraKali.git
-cd VajraKali
-chmod +x banner.sh
-sudo ./banner.sh
+git clone https://github.com/TheTorjanCaptain/VAJRAKALI.git
+cd VAJRAKALI
+chmod +x VAJRAKALI.sh
+sudo ./VAJRAKALI.sh
 
 ⚠️ Always run this as root/sudo to avoid permission errors.
 

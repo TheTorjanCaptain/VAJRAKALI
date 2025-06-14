@@ -50,7 +50,7 @@ Realtek Fixers – rtl88xxau, rtl8812au drivers
 
 
 🖥️ Screenshots
-![image](https://github.com/user-attachments/assets/54e19c5d-aa9a-4f39-abf0-75e79b6bb383)
+![VAJRAKALI](https://github.com/user-attachments/assets/98024274-8413-4ed7-ac5d-051babb56dd2)
 
 
 ⚠️ Disclaimer
@@ -63,5 +63,4 @@ This project is licensed under the MIT License.
 🤖 Author
 TheTorjanCaptain
 [GitHub Profile](https://github.com/TheTorjanCaptain)
-
 

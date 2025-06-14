@@ -47,8 +47,8 @@ sudo ./VAJRAKALI.sh
 ✅ Ctrl+C graceful exit handling  
 ❌ Smart GitHub tool detection & update check (Planned)  
 ❌ Auto-detection of missing dependencies (Planned)  
-❌ Package conflict resolution warning (Planned)
-❌ Game-up VAJRAKALI (Planned) 
+❌ Package conflict resolution warning (Planned)  
+❌ Game-up VAJRAKALI (Planned)
 
 ---
 

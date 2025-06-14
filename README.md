@@ -43,10 +43,10 @@ Realtek Fixers – rtl88xxau, rtl8812au drivers
 ---
 
 ## 💡 Roadmap
-✅ Interactive menu-driven installation
-✅ Ctrl+C graceful exit handling
-❌ Smart GitHub tool detection & update check (Planned)
-❌ Auto-detection of missing dependencies (Planned)
+✅ Interactive menu-driven installation  
+✅ Ctrl+C graceful exit handling  
+❌ Smart GitHub tool detection & update check (Planned)  
+❌ Auto-detection of missing dependencies (Planned)  
 ❌ Package conflict resolution warning (Planned)
 
 ---

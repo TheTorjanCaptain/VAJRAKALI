@@ -28,6 +28,7 @@ sudo ./VAJRAKALI.sh
 
 ⚠️ Always run this as root/sudo to avoid permission errors.
 
+---
 
 ⚙️ Available Tool Modules
 Core Tools – nmap, sqlmap, responder, impacket, crackmapexec, evil-winrm, etc.
@@ -39,6 +40,7 @@ Developer Essentials – git, curl, wget, vim, golang
 Stealth Tools – tor, proxychains, macchanger
 Realtek Fixers – rtl88xxau, rtl8812au drivers
 
+---
 
 💡 Roadmap
 ✅ Interactive menu-driven installation
@@ -47,14 +49,18 @@ Realtek Fixers – rtl88xxau, rtl8812au drivers
 ❌ Auto-detection of missing dependencies (Planned)
 ❌ Package conflict resolution warning (Planned)
 
+---
 
 ⚠️ Disclaimer
 ⚠️ This tool is intended only for authorized security testing and educational purposes.
 Misuse of this tool for unauthorized attacks is strictly prohibited.
 
+---
+
 📄 License
 This project is licensed under the MIT License.
 
+---
 
 ## 🤖 Author
 [TheTorjanCaptain](https://github.com/TheTorjanCaptain)

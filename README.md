@@ -25,3 +25,5 @@
 git clone https://github.com/TheTorjanCaptain/VajraKali.git
 cd VajraKali
 sudo bash banner.sh
+
+⚠️ Always run this as root/sudo to avoid permission errors.

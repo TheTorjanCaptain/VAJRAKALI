@@ -13,9 +13,7 @@
 
 - ✅ Default, Custom, or Specific Tool Installation Modes.
 - ✅ Automatic detection of already installed APT tools.
-- ✅ Clean and colored output with progress feedback.
 - ✅ GitHub tools clone & setup (`linpeas`, `winpeas`, `wpscan`, `gowitness`).
-- ✅ Ctrl+C handling (Graceful exit).
 - ✅ Post-install summary (Installed / Failed tools).
 
 ---
@@ -59,4 +57,4 @@ This project is licensed under the MIT License.
 
 
 🤖 **Author**
-[TheTorjanCaptain](https://github.com/TheTorjanCaptain)
+![TheTorjanCaptain](https://github.com/TheTorjanCaptain)

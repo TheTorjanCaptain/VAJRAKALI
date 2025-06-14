@@ -30,7 +30,7 @@ sudo ./VAJRAKALI.sh
 
 ---
 
-⚙️ Available Tool Modules
+## ⚙️ Available Tool Modules
 Core Tools – nmap, sqlmap, responder, impacket, crackmapexec, evil-winrm, etc.
 Wireless Tools – aircrack-ng, reaver, pixiewps, bully
 VM/UTM Tools – spice-vdagent, qemu-guest-agent
@@ -42,7 +42,7 @@ Realtek Fixers – rtl88xxau, rtl8812au drivers
 
 ---
 
-💡 Roadmap
+## 💡 Roadmap
 ✅ Interactive menu-driven installation
 ✅ Ctrl+C graceful exit handling
 ❌ Smart GitHub tool detection & update check (Planned)
@@ -51,13 +51,13 @@ Realtek Fixers – rtl88xxau, rtl8812au drivers
 
 ---
 
-⚠️ Disclaimer
+## ⚠️ Disclaimer
 ⚠️ This tool is intended only for authorized security testing and educational purposes.
 Misuse of this tool for unauthorized attacks is strictly prohibited.
 
 ---
 
-📄 License
+## 📄 License
 This project is licensed under the MIT License.
 
 ---

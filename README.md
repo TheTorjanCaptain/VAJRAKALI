@@ -56,5 +56,5 @@ Misuse of this tool for unauthorized attacks is strictly prohibited.
 This project is licensed under the MIT License.
 
 
-🤖 **Author**
-![TheTorjanCaptain](https://github.com/TheTorjanCaptain)
+## 🤖 Author
+[TheTorjanCaptain](https://github.com/TheTorjanCaptain)

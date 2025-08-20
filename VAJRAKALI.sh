@@ -42,7 +42,7 @@ for line in "${banner_lines[@]}"; do
 done
 
 echo -e "${YELLOW}[+] VajraKali - The Indestructible Pentest Forge [+]${NC}"
-echo -e "${WHITE}[Version 1.0.1]${NC}\n"
+echo -e "${WHITE}[Version 1.0.2]${NC}\n"
 
 echo -e "${YELLOW}[*] It is recommended to run a full Kali update first:${NC}"
 echo -e "    sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y\n"
@@ -113,20 +113,35 @@ install_go_deps() {
     fi
 }
 
-# Function: Install Tools (with improved summary and auto dependency fetching)
+# Function: Install Tools (with fun facts and improved summary)
 install_tools() {
     local tools=("$@")
     local installed=()
     local failed=()
 
+    display_random_fact() {
+        local facts_url="https://raw.githubusercontent.com/TheTorjanCaptain/Vulnerable-POC-Syntax/main/CS_FunFacts.txt"
+        local facts_file="/tmp/cs_funfacts.txt"
+
+        if curl -sfL "$facts_url" -o "$facts_file"; then
+            :
+        else
+            return
+        fi
+
+        local fact
+        fact=$(shuf -n 1 "$facts_file")
+        echo -e "\n💡 Cybersecurity Fun Fact: $fact\n"
+    }
+
     for tool in "${tools[@]}"; do
         if dpkg -s "$tool" &>/dev/null; then
             echo -e "    ${GREEN}[✓] Already Installed: $tool${NC}"
             installed+=("$tool (Already Installed)")
+            display_random_fact
             continue
         fi
 
-        # Auto-fetch and install online dependencies for the tool
         fetch_and_install_apt_deps "$tool"
 
         echo -e "${YELLOW}[*] Installing: $tool${NC}"
@@ -135,6 +150,7 @@ install_tools() {
         if sudo apt-get install -y "$tool" &>"$install_log"; then
             echo -e "    ${GREEN}[✓] Installed: $tool${NC}"
             installed+=("$tool (Installed)")
+            display_random_fact
         else
             err=$(grep -iE "E:|error" "$install_log" | head -n 1)
             echo -e "    ${RED}[✗] Failed to install: $tool${NC}"
@@ -142,7 +158,6 @@ install_tools() {
         fi
     done
 
-    # Only show 'Installed' and 'Failed' if there actually are entries
     echo -e "\n========= ${CYAN}Installation Summary${NC} ========="
     if [ ${#installed[@]} -gt 0 ]; then
         echo -e "${GREEN}Installed:${NC}"
@@ -153,7 +168,6 @@ install_tools() {
         for item in "${failed[@]}"; do echo " - $item"; done
     fi
     echo -e "${CYAN}=======================================${NC}\n"
-    setup_cron_job_prompt
 }
 
 # Function: Install GitHub Tools with auto dependency handling
@@ -194,7 +208,6 @@ update_github_tools() {
             git_output=$(git pull)
             echo "$git_output"
 
-            # For Python tools
             if [ -f "requirements.txt" ]; then
                 if command -v pip &>/dev/null; then
                     pip install --upgrade -r requirements.txt
@@ -204,7 +217,6 @@ update_github_tools() {
                 fi
             fi
 
-            # For Go tool gowitness, only build/install if there was an update
             if [ "$tool" == "gowitness" ]; then
                 if [[ "$git_output" != *"Already up to date."* ]]; then
                     install_go_deps "$(pwd)"
@@ -229,12 +241,10 @@ setup_cron_job_prompt() {
     echo -e "${YELLOW}Do you want to set up a weekly cron job to automatically update GitHub tools? (y/n):${NC}"
     read -r answer
     if [[ "$answer" =~ ^[Yy]$ ]]; then
-        # Adjust path to your actual script location
         SCRIPT_PATH="$(realpath "$0")"
         croncmd="$SCRIPT_PATH --update-github-tools"
         cronjob="0 3 * * 0 $croncmd # VajraKali weekly GitHub tools update"
 
-        # Add if not already exists
         crontab -l 2>/dev/null | grep -Fv "$croncmd" | { cat; echo "$cronjob"; } | crontab -
         echo -e "${GREEN}Cron job installed to run weekly at 3 AM on Sundays.${NC}"
     else

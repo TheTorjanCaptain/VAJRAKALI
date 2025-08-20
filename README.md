@@ -14,7 +14,10 @@
 - ✅ Default, Custom, or Specific Tool Installation Modes.
 - ✅ Automatic detection of already installed APT tools.
 - ✅ GitHub tools clone & setup (`linpeas`, `winpeas`, `wpscan`, `gowitness`).
-- ✅ Post-install summary (Installed / Failed tools).
+- ✅ Automatic installation of tool dependencies for Python and Go projects.
+- ✅ Manual but automated GitHub tool update functionality with success/error reporting.
+- ✅ Optional weekly cron job setup for automatic GitHub tools updates.
+- ✅ Post-install summary showing Installed and Failed tools.
 
 ---
 
@@ -42,13 +45,19 @@ sudo ./VAJRAKALI.sh
 
 ---
 
+## 🕒 Automatic Updates & Cron Jobs
+
+After running updates, VajraKali can prompt you to install a **weekly scheduled cron job** that automatically updates the GitHub-based tools for you, helping keep your pentesting environment continuously up-to-date without manual intervention.
+
+---
+
 ## 💡 Roadmap
 ✅ Interactive menu-driven installation  
 ✅ Ctrl+C graceful exit handling  
-❌ Smart GitHub tool detection & update check (Planned)  
-❌ Auto-detection of missing dependencies (Planned)  
-❌ Package conflict resolution warning (Planned)  
-❌ Game-up VAJRAKALI (Planned)
+✅ Smart GitHub tool detection & update check  
+✅ Auto-detection of missing dependencies  
+✅ Package conflict resolution warning  
+❌ Facts on VAJRAKALI (Planned)
 
 ---
 

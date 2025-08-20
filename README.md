@@ -57,7 +57,7 @@ After running updates, VajraKali can prompt you to install a **weekly scheduled 
 ✅ Smart GitHub tool detection & update check  
 ✅ Auto-detection of missing dependencies  
 ✅ Package conflict resolution warning  
-❌ Facts on VAJRAKALI (Planned)
+✅ Facts on VAJRAKALI
 
 ---
 

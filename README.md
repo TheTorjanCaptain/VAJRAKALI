@@ -1,6 +1,6 @@
 # VajraKali - The Indestructible Pentest Forge
 
-![VajraKali Banner](https://img.shields.io/badge/VajraKali-v1.0.0-blue.svg)
+![VajraKali Banner](https://img.shields.io/badge/VajraKali-v1.0.1-blue.svg)
 ![Main Menu Screenshot](misc/VAJRAKALIss.png)
 
 ## ⚡ About VajraKali
